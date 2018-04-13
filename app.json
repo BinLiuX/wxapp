@@ -1,0 +1,52 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/home/home",
+        "pages/logs/logs"
+
+    ],
+    "subPackages": [
+        {
+            "root": "pagesA",
+            "pages": [
+                "detail/detail"
+            ]
+        }
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#1aaba8",
+        "navigationBarTitleText": "小鱼",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#8a8a8a",
+        "selectedColor": "#1aaba8",
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "发现",
+                "iconPath": "image/home/icon_find.png",
+                "selectedIconPath": "image/home/icon_find_active.png"
+            },
+            {
+                "pagePath": "pages/logs/logs",
+                "text": "创作",
+                "iconPath": "image/home/icon_add.png",
+                "selectedIconPath": "image/home/icon_add_active.png"
+            },
+            {
+                "pagePath": "pages/home/home",
+                "text": "我",
+                "iconPath": "image/home/icon_account.png",
+                "selectedIconPath": "image/home/icon_account_active.png"
+            }
+        ]
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "downloadFile": 10000
+    },
+    "debug": true
+}
