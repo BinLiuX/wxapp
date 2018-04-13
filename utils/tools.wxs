@@ -1,0 +1,8 @@
+var foo = function(data){
+    return data;
+}
+var d = "this is come from wxs!";
+module.exports = {
+    Do:foo,
+    D:d
+}

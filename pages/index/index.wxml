@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<template name="test">
+    <view class="J_edit eidt {{active?'editActive':''}}" bindtouchmove='moveTo'  >
+        <view class='con'>
+            <view class='close' bindtap="removeEdit"></view>
+            <block wx:key="{{count}}" wx:for="{{count}}">
+                <view class="add" data-index="{{index}}"> {{item + 1}} </view>
+            </block>
+        </view>
+    </view>
+</template>
+<wxs src="../../utils/tools.wxs" module="tools" />
+<view class='page'>
+    <view class="container {{over?'hidden smaller':''}}" bindtouchmove='conTouch'>
+        <block wx:key="{{count}}" wx:for="{{count}}">
+            <view class="add" data-index="{{index}}" bindtap='addEdit'> {{item + 1}} </view>
+        </block>
+    </view>
+    <view wx:if="{{active}}" class="mask" catchtouchmove bindtap='removeEdit'></view>
+    <template is="test" data="{{current:current,active:active,count:count}}"></template>
+</view>

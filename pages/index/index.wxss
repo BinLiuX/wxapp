@@ -1,0 +1,74 @@
+/**index.wxss**/
+::-webkit-scrollbar {
+    display: none;
+}
+.page {
+    background: #000;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    padding-top: 15px;
+    background: #fff;
+    -webkit-overflow-scrolling: touch;
+    transition: all 200ms linear;    
+}
+.hidden {
+    height: 100vh;
+    overflow: hidden;
+}
+.smaller {
+    transform: scale(0.95);
+}
+.add {
+    width: 90%;
+    margin: 15px auto 0;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #1aaba8;
+    color: #1aaba8;
+    box-sizing: border-box;
+}
+.add:last-child{
+    margin-bottom: 30px;
+}
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+}
+.eidt {
+    position: fixed; 
+    top: 100%;
+    width: 100%;
+    transition: all 200ms linear;
+}
+.editActive {
+    top: 50px;
+}
+.con {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border: 1rpx solid #1aaba8;
+}
